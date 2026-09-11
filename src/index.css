@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-serif: 'Rozha One', 'Cinzel', Georgia, serif;
+    --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #FAF6EE;
+    color: #292524;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+
+  .font-serif-desi {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom Indian Cultural & Palette Accents */
+.bg-kesari {
+  background-color: #D9531E;
+}
+.text-kesari {
+  color: #C2410C;
+}
+.border-kesari {
+  border-color: #EA580C;
+}
+
+.bg-terracotta {
+  background-color: #9A3412;
+}
+.text-terracotta {
+  color: #9A3412;
+}
+
+.bg-maroon-deep {
+  background-color: #701A1E;
+}
+.text-maroon-deep {
+  color: #701A1E;
+}
+
+.bg-warm-ivory {
+  background-color: #FAF6EE;
+}
+.bg-cream-card {
+  background-color: #FFFDF9;
+}
+
+/* Subtle Jaali / Indian Architectural Lattice Background Pattern (very faint & elegant) */
+.bg-jaali-pattern {
+  background-color: #FAF6EE;
+  background-image: radial-gradient(#C2410C 0.65px, transparent 0.65px), radial-gradient(#C2410C 0.65px, #FAF6EE 0.65px);
+  background-size: 26px 26px;
+  background-position: 0 0, 13px 13px;
+  background-opacity: 0.03;
+}
+
+/* Subtle decorative brass/copper border accent */
+.border-indian-accent {
+  border-color: rgba(194, 65, 12, 0.22);
+}
+
+/* Leaflet Custom Marker & Popup */
+.leaflet-popup-content-wrapper {
+  border-radius: 16px !important;
+  box-shadow: 0 12px 30px -6px rgba(41, 37, 36, 0.15), 0 8px 12px -4px rgba(41, 37, 36, 0.08) !important;
+  border: 1px solid #FED7AA !important;
+  background-color: #FFFDF9 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.custom-bhandara-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EA580C;
+  color: #FFFFFF;
+  border-radius: 50%;
+  border: 2.5px solid #FFFFFF;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.45);
+  transition: transform 0.2s ease;
+}
+
+.custom-bhandara-pin:hover {
+  transform: scale(1.15);
+}
+
+.custom-bhandara-pin.live-pulse {
+  animation: pulse-saffron 2s infinite;
+}
+
+@keyframes pulse-saffron {
+  0% {
+    box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(234, 88, 12, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(234, 88, 12, 0);
+  }
+}

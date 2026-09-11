@@ -1,0 +1,6 @@
+{
+  "name": "AnnSetu",
+  "description": "Discover nearby community Bhandaras with real-time status, trust indicators, directions, and community confirmations.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
